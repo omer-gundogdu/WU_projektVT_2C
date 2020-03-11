@@ -11,8 +11,8 @@
 
 body {
     width: 100%;
-
     background: rgb(219, 219, 219);
+    
 }
 
 body, html {
@@ -22,26 +22,36 @@ body, html {
 main {
     grid-area: content;
     display: grid;
-    grid-template-areas: "s1" "s2" "s3";
-    grid-template-rows: 150px 150px;
-    width: 80%;
+    grid-template-areas: "s1" "s2" "s3" "s4" "s5";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 75%;
     margin: 20px auto;
-
+    gap: 1em;
+    height: 200vh;
 }
+
 .section1{
     grid-area: s1;
-    background-color: rgb(82, 81, 81);
+    background-color: rgb(75, 36, 36);
     position: relative;
 
 
 }
 .section2{
     grid-area: s2;
-    background-color: rgb(82, 81,81);
+    background-color: rgb(224, 169, 169);
 }
 .section3{
     grid-area: s3;
-    background-color: (82, 81, 81);
+    background-color: rgb(46, 13, 13);
+}
+.section4{
+    grid-area: s4;
+    background-color: rgb(88, 170, 120);
+}
+.section5{
+    grid-area: s5;
+    background-color: rgb(141, 30, 82);
 }
 
 
