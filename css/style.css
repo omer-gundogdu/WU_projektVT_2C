@@ -1,5 +1,4 @@
 /* Font Import */
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 /* Default*/
 
@@ -19,23 +18,67 @@ body, html {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*Main pagewrapper*/
+.pagewrapper {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 65px 400px auto 40px;
+    grid-template-areas: "nav" "mellan" "content" "footer";
+}
+/* Pagewrapper main (content)*/
 main {
     grid-area: content;
     display: grid;
-    grid-template-areas: "s1" "s2" "s3" "s4" "s5";
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "ar1" "s1" 
+    "ar2" "s2" 
+    "ar3" "s3" 
+    "ar4" "s4" 
+    "ar5" "s5";
+    grid-template-rows: 40px 1fr 40px 1fr 40px 1fr 40px 1fr 40px 1fr;
     width: 75%;
     margin: 20px auto;
     gap: 1em;
     height: 200vh;
 }
 
-.section1{
+/* Bild - mellan content och nav*/
+.bild-mellan {
+    grid-area: mellan;
+    background-color: antiquewhite;
+}
+/*Article mellan sections*/
+ article{
+     font-size: 25px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .article1{
+    grid-area: ar1;
+ }
+ .article2{
+    grid-area: ar2;
+ }
+ .article3{
+    grid-area: ar3;
+ }
+ .article4{
+    grid-area: ar4;
+ }
+ .article5{
+    grid-area: ar5;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+ }
+
+
+ /* Sections */
+ .section1{
     grid-area: s1;
     background-color: rgb(75, 36, 36);
-    position: relative;
-
-
 }
 .section2{
     grid-area: s2;
@@ -51,7 +94,7 @@ main {
 }
 .section5{
     grid-area: s5;
-    background-color: rgb(141, 30, 82);
+    background-color: rgb(219, 219, 219);
 }
 
 
@@ -62,10 +105,23 @@ footer {
     align-items: center;
     justify-content: center;
 }
+/*Styling -> font */
 h4{
     color: white;
     font-family: 'Montseratt', sans-serif;
     font-weight: normal;
+}
+p {
+    color: black;
+    font-family: 'Montseratt', sans-serif;
+    font-weight: normal;
+    font-family: 'Montserrat';
+}
+h3 {
+    color: black;
+    font-family: 'Montseratt', sans-serif;
+    font-weight: normal;
+
 }
 
 /* Removes default styles for links in a, li */
@@ -75,16 +131,6 @@ a, li {
     list-style-type: none;
 
 }
-
-.pagewrapper {
-    min-height: 100vh;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 65px auto 40px;
-    grid-template-areas: "nav" "content" "footer";
-}
-
-
 
 /* NAV */
 
@@ -111,7 +157,6 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 
