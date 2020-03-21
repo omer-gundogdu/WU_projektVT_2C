@@ -49,15 +49,37 @@ body, html {
     display: grid;
     grid-template-areas: 
     "ar1" "s1"
-    "ar2" "s2";
-    grid-template-rows: 40px 1fr 40px 1fr;
+    "ar2" "s2"
+    "ar3" "s3";
+    grid-template-rows: 40px 1fr 40px 1fr 40px 1fr;
     width: 75%;
     margin: 20px auto;
     grid-gap: 3vh;
-    height: 80vh;
+    height: 120vh;
 }
 
 .pagewrapper_om_oss {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 65px auto 40px;
+    grid-template-areas: "nav" "content" "footer";
+}
+
+/*Pagewrapper main för shop1/shop2 */
+.shop_content {
+    grid-area: content;
+    display: grid;
+    grid-template-areas: 
+    "ar1" "s1" 
+    "s2";
+    grid-template-rows: 40px 1fr 30px;
+    width: 75%;
+    margin: 20px auto;
+    grid-gap: 3vh;
+    height: 120vh;
+}
+.pagewrapper_shop{
     min-height: 100vh;
     width: 100%;
     display: grid;
@@ -98,6 +120,9 @@ body, html {
  .article2{
     grid-area: ar2;
  }
+ .article3{
+    grid-area: ar3;
+ }
 
 
  /* Sections*/
@@ -124,6 +149,15 @@ body, html {
     grid-area: s3;
     background-color: rgb(160, 150, 150);
 }
+
+.section2_arrow {
+    grid-area: s2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+}
+
 .om_oss_info {
     background-color: rgb(160, 150, 150);
     border-radius: 50px;
@@ -134,6 +168,12 @@ body, html {
     border-radius: 50px;
     grid-area: s2;
 }
+.vara_lokaler {
+    background-color: rgb(160, 150, 150);
+    border-radius: 50px;
+    grid-area: s3;
+}
+
 
 footer {
     grid-area: footer;
@@ -153,7 +193,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;    
 }
- .om_oss_info > p , .om_oss_kontakt > p{
+ .om_oss_info > p , .om_oss_kontakt > p , .vara_lokaler > p{
     font-size: 20px;
     margin: 20px;
 }
@@ -199,7 +239,40 @@ nav {
     justify-content: space-around;
     align-items: center;
 }
-
+/* NavArrows bottom*/
+i {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 7px;
+}
+.next {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+  
+.previous {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.box_arrow {
+    background-color: white;
+    width: 1.5vw;
+    height: 4vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 10px;
+}
+.box_arrow_prev {
+    background-color: white;
+    width: 1.5vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
 
 /*highlight for menu elements*/
 
