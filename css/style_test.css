@@ -22,8 +22,8 @@ body, html {
     min-height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-rows: 120px 575px auto 40px;
-    grid-template-areas: "header" "mellan" "content" "footer";
+    grid-template-rows: 65px 575px auto 40px;
+    grid-template-areas: "nav" "mellan" "content" "footer";
 }
 /* Pagewrapper main (content)*/
 
@@ -58,12 +58,12 @@ body, html {
     height: 120vh;
 }
 
-.container_om_oss {
+.pagewrapper_om_oss {
     min-height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-rows: 120px  auto 40px;
-    grid-template-areas: "header" "content" "footer";
+    grid-template-rows: 65px auto 40px;
+    grid-template-areas: "nav" "content" "footer";
 }
 
 /*Pagewrapper main för shop1/shop2 */
@@ -79,20 +79,20 @@ body, html {
     grid-gap: 3vh;
     height: 150vh;
 }
-.container_shop{
+.pagewrapper_shop{
     min-height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-rows: 120px auto 40px;
-    grid-template-areas: "header" "content" "footer";
+    grid-template-rows: 65px auto 40px;
+    grid-template-areas: "nav" "content" "footer";
 }
 
 /*Pagewrapper vagnsida*/
-.container_vagn_sida {
+.pagewrapper_vagn_sida {
     width: 100%;
     display: grid;
-    grid-template-rows: 120px  auto 40px;
-    grid-template-areas: "header" "content" "footer";
+    grid-template-rows: 65px auto 40px;
+    grid-template-areas: "nav" "content" "footer";
     height: 110vh;
 }
 .vagn_sida_content {
@@ -392,13 +392,6 @@ i {
     align-items: center;
     border-radius: 1vh;
 }
-header {
-
-}
-header > img {
-    margin: 10px;
-    height: 75%;
-}
 
 /*highlight for menu elements*/
 
@@ -434,7 +427,7 @@ header > img {
     background-color: #262626;
     position: fixed;
     top: 0;
-    right: -300px;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -498,10 +491,3 @@ header > img {
 .nav-link:hover::after {
     transform: scaleX(1);
 } 
-
-
-/*Media*/
-@media screen and (max-width: 800px) {
-
-
-}
