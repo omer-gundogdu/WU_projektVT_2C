@@ -258,17 +258,17 @@ body, html {
 
 
 .om_oss_info {
-    background-color: rgb(160, 150, 150);
+    background-color: rgb(200, 200, 200);
     border-radius: 2vw;
     grid-area: s1;
 }
 .om_oss_kontakt {
-    background-color: rgb(160, 150, 150);
+    background-color: rgb(200, 200, 200);
     border-radius: 2vw;
     grid-area: s2;
 }
 .vara_lokaler {
-    background-color: rgb(160, 150, 150);
+    background-color: rgb(200, 200, 200);
     border-radius: 2vw;
     grid-area: s3;
 }
