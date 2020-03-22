@@ -22,7 +22,7 @@ body, html {
     height: auto;
     width: 100%;
     display: grid;
-    grid-template-rows: 120px 600px auto 40px;
+    grid-template-rows: 120px 700px auto 40px;
     grid-template-areas: "header" "mellan" "content" "footer";
 }
 
@@ -401,6 +401,9 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;    
 }
+.innehåll > .article1 > h3 {
+
+}
  .om_oss_info > p , .om_oss_kontakt > p , .vara_lokaler > p  {
     font-size: 20px;
     margin: 20px;
@@ -425,6 +428,7 @@ h3 {
     font-weight: normal;
 
 }
+
 
 /* Removes default styles for links in a, li */
 
