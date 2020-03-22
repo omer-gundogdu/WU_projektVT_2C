@@ -76,7 +76,7 @@ body, html {
     width: 300px;
     height: 100vh;
 
-    background-color: rgb(88, 14, 14);
+    background-color: rgb(44, 4, 4);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -350,17 +350,17 @@ body, html {
 
 
 .om_oss_info {
-    background-color: rgb(160, 150, 150);
+    background-color: rgb(200, 200, 200);
     border-radius: 2vw;
     grid-area: s1;
 }
 .om_oss_kontakt {
-    background-color: rgb(160, 150, 150);
+    background-color: rgb(200, 200, 200);
     border-radius: 2vw;
     grid-area: s2;
 }
 .vara_lokaler {
-    background-color: rgb(160, 150, 150);
+    background-color: rgb(200, 200, 200);
     border-radius: 2vw;
     grid-area: s3;
 }
@@ -470,7 +470,733 @@ i {
 }
 
 /*Media*/
+
+@media screen and (max-width: 1500px) {
+    .container {
+        grid-template-rows: 120px 430px auto 40px;
+        
+    }
+    
+    .innehåll {
+        height: 120vh;
+    }
+    .bild-mellan > img , .clickable{
+        width: 40vw;
+        height: 45vh;
+    }
+    .logo {
+        margin: 1%;
+        height: 6vh;
+        margin-left: -10px;
+
+    }
+    
+    .section1 > img , .section1_pt2 > img{
+        width: 12vw;
+        height: 12vh;
+        margin-bottom: 1vh;
+        margin-right: 3vw;
+    }
+    .section2 > img{
+        width: 14vw;
+        height: 14vh;
+        margin-right: 50vw;
+    }
+    .section1_shop > section > img { 
+        width: 18vw;
+        height: 15vh;
+        border-radius: 10%;
+        margin-left: 10px;
+    }
+    .section1_shop {
+        margin-left: -150px;
+    }
+    .section1_shop > article {
+        font-size: 36px;
+        margin-top: -150px;
+    }
+    .box_arrow {
+        width: 2vw;
+        height: 4vh;
+        border-radius: 25%;
+    }
+    .shop_content > .article1 > h3 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+    .section1_vagn > img{
+        width: 80vw;
+        height: 50vh;
+        
+    }
+    .vagn_sida_content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "s1"
+        "s2";
+    }
+    .mitten > h2{
+        font-size: 40px;
+        margin-top: -50px;
+    }
+    .section2_vagn_info > p{
+        font-size: 30px;
+    }
+    .section2_vagn_info {
+        margin-left: -10px;
+    }
+    .section2_vagn_info > h3{
+        font-size: 34px;
+    }
+    .section2_vagn_info > h2{
+        font-size: 56px;
+    }
+    
+}
+
+@media screen and (max-width: 1250px) {
+    .container {
+        grid-template-rows: 120px 450px auto 40px;
+        
+    }
+    .innehåll {
+        height: 120vh;
+    }
+    .logo {        
+        height: 6vh;
+        margin-left: -10px;
+    }
+    .bild-mellan > img , .clickable{
+        width: 45vw;
+        height: 30vh;
+        border-radius: 5%;
+    }
+
+    .section1 > img , .section1_pt2 > img{
+        width: 13vw;
+        height: 9vh;
+        margin-bottom: 1vh;
+        margin-right: 3vw;
+    }
+    .section2 > img{
+        width: 17vw;
+        height: 14vh;
+        margin-right: 2vw;
+    }
+    .barnvagnsinfo {
+        font-size: 22px;
+    }
+    .container_om_oss {
+        height: 160vh;
+    }
+    .om_oss_content > section > p{
+        font-size: 24px;
+        line-height: 1.5rem;
+    }
+    .section1_shop > section > img { 
+        width: 18vw;
+        height: 15vh;
+        border-radius: 10%;
+        margin-left: 15px;
+    }
+    .section1_shop {
+        margin-left: -120px;
+    }
+    .section1_shop > article {
+        font-size: 34px;
+        margin-top: -180px;
+    }
+    .box_arrow {
+        width: 3vw;
+        height: 4vh;
+        border-radius: 25%;
+    }
+    .box_arrow_prev {
+        width: 3vw;
+        height: 4vh;
+        border-radius: 25%;
+    }
+    .shop_content > .article1 > h3 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .section1_vagn > img{
+        width: 80vw;
+        height: 50vh;
+        
+    }
+    .vagn_sida_content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "s1"
+        "s2";
+    }
+    .mitten > h2{
+        font-size: 40px;
+        margin-top: -50px;
+    }
+    .section2_vagn_info > p{
+        font-size: 30px;
+    }
+    .section2_vagn_info {
+        margin-left: -10px;
+    }
+    .section2_vagn_info > h3{
+        font-size: 34px;
+    }
+    .section2_vagn_info > h2{
+        font-size: 56px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        grid-template-rows: 120px 350px auto 40px;
+        
+    }
+    .innehåll {
+        height: 140vh;
+    }
+    .logo {
+        margin: 2%;
+        height: 6vh;
+        margin-left: -10px;
+    }
+    .bild-mellan > img , .clickable{
+        width: 45vw;
+        height: 45vh;
+        border-radius: 5%;
+    }
+
+    .section1 > img , .section1_pt2 > img{
+        width: 13vw;
+        height: 15vh;
+        margin-bottom: 1vh;
+        margin-right: 3vw;
+    }
+    .section2 > img{
+        width: 16vw;
+        height: 20vh;
+        margin-right: 3.5vw;
+    }
+    .article3 {
+        margin-top: 3vh;
+    }
+    article > h3 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    .barnvagnsinfo {
+        font-size: 14px;
+        margin-top: 2vh;
+    }
+    .container_om_oss {
+        height: 230vh;
+    }
+    .om_oss_content > section > p{
+        font-size: 24px;
+        line-height: 1.5rem;
+    }
+}
 @media screen and (max-width: 800px) {
+    
+    .container {
+        grid-template-rows: 120px 380px auto 40px;
+        
+    }
+    .innehåll {
+        height: 130vh;
+    }
+    .logo {
+        margin: 1%;
+        height: 7vh;
+        margin-left: -10px;
+    }
+    .bild-mellan > img , .clickable{
+        width: 45vw;
+        height: 35vh;
+        border-radius: 5%;
+    }
 
+    .section1 > img , .section1_pt2 > img{
+        width: 13vw;
+        height: 10vh;
+        margin-bottom: 1vh;
+        margin-right: 3vw;
+    }
+    .section2 > img{
+        width: 16vw;
+        height: 13vh;
+        margin-right: 3.5vw;
+    }
+    .article3 {
+        margin-top: 3vh;
+    }
+    
+    .barnvagnsinfo {
+        font-size: 18px;
+        margin-top: 2vh;
+    }
+    .container_om_oss {
+        height: 200vh;
+    }
+    .om_oss_content > section > p{
+        font-size: 22px;
+        line-height: 1.5rem;
+    }
+    .section1_shop > section > img { 
+        width: 18vw;
+        height: 15vh;
+        border-radius: 10%;
+        margin-left: 10px;
+    }
+    .section1_shop {
+        margin-left: -85px;
+    }
+    .section1_shop > article {
+        font-size: 24px;
+        margin-top: -150px;
+    }
+    .box_arrow {
+        width: 4vw;
+        height: 5vh;
+        border-radius: 25%;
+    }
+    .box_arrow_prev {
+        width: 4vw;
+        height: 5vh;
+        border-radius: 25%;
+    }
+    .shop_content > .article1 > h3 {
+        font-size: 34px;
+    }
+    .section1_vagn > img{
+        width: 80vw;
+        height: 50vh;
+        
+    }
+    .vagn_sida_content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "s1"
+        "s2";
+    }
+    .mitten > h2{
+        font-size: 30px;
+        margin-top: -30px;
+    }
+    .section2_vagn_info > p{
+        font-size: 20px;
+    }
+    .section2_vagn_info {
+        margin-left: -10px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .navbar {
+        width: 250px;
+    }
+    .container {
+        grid-template-rows: 120px 230px auto 40px;
+        
+    }
+    .innehåll {
+        height: 140vh;
+    }
+    .logo {
+        margin: 3%;
+        height: 8vh;
+        margin-left: -10px;
+    }
+    .bild-mellan > img , .clickable{
+        width: 45vw;
+        height: 30vh;
+        border-radius: 5%;
+    }
 
+    .section1 > img , .section1_pt2 > img{
+        width: 12vw;
+        height: 8vh;
+        margin-bottom: 1vh;
+        margin-right: 3vw;
+    }
+    .section2 > img{
+        width: 16vw;
+        height: 10vh;
+        margin-right: 1.8vw;
+    }
+    .article3 {
+        margin-top: 3vh;
+    }
+    article > h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .article1 > h3 , .article2 > h3{
+        font-size: 22px;
+    }
+    .barnvagnsinfo {
+        font-size: 14px;
+        margin-top: 2vh;
+    }
+    .container_om_oss {
+        height: 360vh;
+    }
+    .om_oss_content > section > p{
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+    .container_om_oss {
+        height: 340vh;
+    }
+    .om_oss_content > section > p{
+        font-size: 20px;
+        line-height: 1.5rem;
+    }
+    .section1_shop > section > img { 
+        width: 18vw;
+        height: 15vh;
+        border-radius: 10%;
+        margin-left: 6px;
+        margin-bottom: -100px;
+    }
+    .section1_shop {
+        margin-left: -60px;
+    }
+    .section1_shop > article {
+        font-size: 18px;
+        margin-top: -150px;
+    }
+    
+    .box_arrow {
+        width: 5vw;
+        height: 6vh;
+        border-radius: 25%;
+    }
+    .box_arrow_prev {
+        width: 8vw;
+        height: 6vh;
+        border-radius: 25%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .navbar {
+        width: 200px;
+    }
+    .container {
+        grid-template-rows: 120px 220px auto 40px;
+        
+    }
+    .innehåll {
+        height: 170vh;
+    }
+    .logo {
+        margin: 5%;
+        height: 7vh;
+        margin-left: -10px;
+    }
+    .bild-mellan > img , .clickable{
+        width: 40vw;
+        height: 25vh;
+        border-radius: 5%;
+    }
+
+    .section1 > img , .section1_pt2 > img{
+        width: 12vw;
+        height: 8vh;
+        margin-bottom: 1vh;
+        margin-right: 3vw;
+    }
+    .section2 > img{
+        width: 16vw;
+        height: 10vh;
+        margin-right: 1.8vw;
+    }
+    .article3 {
+        margin-top: 3vh;
+    }
+    article > h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .article1 > h3 , .article2 > h3{
+        font-size: 22px;
+    }
+    .barnvagnsinfo {
+        font-size: 14px;
+        margin-top: 2vh;
+    }
+    .container_om_oss {
+        height: 360vh;
+    }
+    .om_oss_content > section > p{
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+    .section1_shop > section > img { 
+        width: 18vw;
+        height: 15vh;
+        border-radius: 10%;
+        margin-left: 4px;
+    }
+    .section1_shop {
+        margin-left: -35px;
+    }
+    .section1_shop > article {
+        font-size: 14px;
+        margin-top: -100px;
+    }
+    .box_arrow {
+        width: 7vw;
+        height: 6vh;
+        border-radius: 25%;
+    }
+    .section1_vagn > img{
+        width: 80vw;
+        height: 35vh;
+        
+    }
+    .vagn_sida_content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "s1"
+        "s2";
+    }
+    .section2_vagn_info > p{
+        font-size: 16px;
+    }
+    .section2_vagn_info {
+        margin-left: -10px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .navbar {
+        width: 200px;
+    }
+    .container {
+        grid-template-rows: 120px 220px auto 40px;
+        
+    }
+    .innehåll {
+        height: 170vh;
+    }
+    .logo {
+        margin: 5%;
+        height: 7vh;
+        margin-left: -10px;
+    }
+    .bild-mellan > img , .clickable{
+        width: 40vw;
+        height: 25vh;
+        border-radius: 5%;
+    }
+
+    .section1 > img , .section1_pt2 > img{
+        width: 12vw;
+        height: 8vh;
+        margin-bottom: 1vh;
+        margin-right: 3vw;
+    }
+    .section2 > img{
+        width: 16vw;
+        height: 10vh;
+        margin-right: 1.8vw;
+    }
+    .article3 {
+        margin-top: 3vh;
+    }
+    article > h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .article1 > h3 , .article2 > h3{
+        font-size: 22px;
+    }
+    .barnvagnsinfo {
+        font-size: 14px;
+        margin-top: 2vh;
+    }
+    .container_om_oss {
+        height: 430vh;
+    }
+    .om_oss_content > section > p{
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+    .section1_vagn > img{
+        width: 80vw;
+        height: 30vh;
+        
+    }
+    .vagn_sida_content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "s1"
+        "s2";
+    }
+    .section2_vagn_info > p{
+        font-size: 16px;
+    }
+    .section2_vagn_info {
+        margin-left: -10px;
+    }
+    
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        grid-template-rows: 120px 200px auto 40px;
+        
+    }
+    .innehåll {
+        height: 190vh;
+        
+    }
+    .logo {
+        margin: 5%;
+        height: 9vh;
+        margin-left: -10px;
+    }
+    .bild-mellan > img , .clickable{
+        width: 40vw;
+        height: 25vh;
+    }
+    
+    .section1 > img , .section1_pt2 > img{
+        width: 13vw;
+        height: 10vh;
+        margin-right: 2vw;
+    }
+    .section2 > img{
+        width: 13vw;
+        height: 10vh;
+        margin-right: 4.5vw;
+    }
+    .article3 {
+        margin-top: 3vh;
+    }
+    article > h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .article1 > h3 , .article2 > h3{
+        font-size: 22px;
+    }
+    .barnvagnsinfo {
+        font-size: 14px;
+        margin-top: 2vh;
+    }
+    .container_om_oss {
+        height: 410vh;
+    }
+    .om_oss_content > section > p{
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+    .section1_shop > section > img { 
+        width: 17vw;
+        height: 13vh;
+        border-radius: 10%;
+        margin-left: 10px;
+    }
+    .section1_shop {
+        margin-left: -45px;
+    }
+    .section1_shop > article {
+        font-size: 18px;
+        margin-top: -80px;
+    }
+    .section1_vagn > img{
+        width: 80vw;
+        height: 40vh;
+        
+    }
+    .vagn_sida_content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "s1"
+        "s2";
+        
+    }
+    .section2_vagn_info > p{
+        font-size: 16px;
+    }
+    .section2_vagn_info {
+        margin-left: -10px;
+    }
+    .navbar {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .container {
+        grid-template-rows: 120px 200px auto 40px;
+        
+    }
+    .innehåll {
+        height: 220vh;
+        
+    }
+    .logo {
+        margin: 8%;
+        height: 8vh;
+        margin-left: -10px;
+    }
+    .bild-mellan > img , .clickable{
+        width: 40vw;
+        height: 25vh;
+    }
+    
+    .section1 > img , .section1_pt2 > img{
+        width: 13vw;
+        height: 10vh;
+        margin-right: 2vw;
+    }
+    .section2 > img{
+        width: 13vw;
+        height: 10vh;
+        margin-right: 4.5vw;
+    }
+    .article3 {
+        margin-top: 3vh;
+    }
+    article > h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .article1 > h3 , .article2 > h3{
+        font-size: 22px;
+    }
+    .barnvagnsinfo {
+        font-size: 14px;
+        margin-top: 2vh;
+    }
+    /*Om oss*/
+    .container_om_oss {
+        height: 510vh;
+    }
+    .om_oss_content > section > p{
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+    .section1_vagn > img{
+        width: 80vw;
+        height: 40vh;
+        
+    }
+    .vagn_sida_content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "s1" "s2";
+    }
+    
+    .section2_vagn_info > p{
+        font-size: 16px;
+    }
+    .section2_vagn_info {
+        margin-left: -10px;
+    }
+    .navbar {
+        width: 200px;
+    }
 }

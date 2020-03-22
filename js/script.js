@@ -47,7 +47,9 @@ function toggleNav() {
 
     if (avoider.style.display === "none") {
         avoider.style.display = "block";
+        menuIcon.style.right = "60px";
     } else {
         avoider.style.display = "none";
+        menuIcon.style.right = "50px";
     }
 }
