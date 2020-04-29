@@ -249,6 +249,17 @@ body, html {
     justify-content: space-evenly;   
     
 }
+.section1_mellan{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mellan{
+    background-color: rgb(200, 200, 200);
+    border-radius: 2vw;
+    grid-area: mellan;
+}
 
 
 .section1 > img , .section1_pt2 > img{
