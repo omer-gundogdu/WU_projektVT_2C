@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -306,23 +305,18 @@ article {
     border-radius: 2vw;
 }
 
-.section1_pt2 {
-    grid-area: sec1pt2;
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .section2 {
     grid-area: s2;
 }
 
 .section2>img, .section1>img, .section1>a>img{
-    width: 15vw;
+    height: 25vh;
     display: inline-flex;
     justify-content: center;
     margin-right: 3vw;
     border-radius: 2vw;
 }
+
 
 .section1_shop {
     grid-area: s1;
@@ -451,7 +445,7 @@ p {
     line-height: 1.5em;
 }
 
-.section2_vagn_info>h2 {
+.section2_vagn_info>.green {
     font-size: 40px;
     color: green;
     margin: 2%;
